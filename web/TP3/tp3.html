@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP n°3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Veuillez entrer vos informations</h1>
+            <p>Valeur par défaut : Vycen, hello, 24/04/1996, Homme</p>
+            <form action="../TP3Servlet" method="post">
+                <p><label for="pseudo">Pseudo : </label><input type="text" id="pseudo" name="pseudo"></p>
+                <p><label for="mdp">Mot de passe : </label><input type="password" id="mdp" name="password"></p>
+                <p><label for="date">Date de naissance : </label><input type="date" id="date" name="date"></p>
+                <p><label for="sexe">Sexe : </label><select id="sexe" name="sexe" ><option value="h">Homme</option><option value="f">Femme</option></select></p>
+                <p><input type="submit"></p>
+                <a href="../index.html">Page d'accueil</a>
+            </form>
+            <p>Le formulaire utilise la méthode POST. Les paramètres ne seront donc pas visible dans l'URL, mais seront stockés dans le corp de la requête.</p>
+        </div>
+    </body>
+</html>
+
